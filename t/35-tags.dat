@@ -640,5 +640,12 @@
 { "r" : "1", "t" : "<mt:Unless sanitize='0'><a onclick='alert(1)'>foo</a></mt:Unless>", "e" : "<a onclick='alert(1)'>foo</a>"}, #624
 { "r" : "1", "t" : "<mt:Unless sanitize=''><a onclick='alert(1)'>foo</a></mt:Unless>", "e" : "<a onclick='alert(1)'>foo</a>"}, #625
 { "r" : "1", "t" : "<mt:Unless numify=''>-1234567</mt:Unless>", "e" : "-1234567"}, #626
-{ "r" : "1", "t" : "<mt:Unless numify='0'>-1234567</mt:Unless>", "e" : "-102340567"} #627
+{ "r" : "1", "t" : "<mt:Unless numify='0'>-1234567</mt:Unless>", "e" : "-102340567"}, #627
+{ "r" : "1", "t" : "<MTBlogLanguage ietf=\"1\">", "e" : "en-us"}, #628
+{ "r" : "1", "t" : "<MTBlogDateLanguage>", "e" : "en_us"}, #629
+{ "r" : "1", "t" : "<MTBlogDateLanguage locale='1'>", "e" : "en_US"}, #630
+{ "r" : "1", "t" : "<MTBlogDateLanguage ietf='1'>", "e" : "en-us"}, #631
+{ "r" : "1", "t" : "<mt:Websites><mt:WebsiteDateLanguage></mt:Websites>", "e" : "en_us"}, #632
+{ "r" : "1", "t" : "<mt:Websites><mt:WebsiteDateLanguage locale='1'></mt:Websites>", "e" : "en_US"}, #633
+{ "r" : "1", "t" : "<mt:Websites><mt:WebsiteDateLanguage ietf='1'></mt:Websites>", "e" : "en-us"} #634
 ]
